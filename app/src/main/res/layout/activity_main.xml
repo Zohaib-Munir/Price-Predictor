@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundColor"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="100dp"
+        android:id="@+id/main_Logo"
+        android:background="@drawable/main_logo">
+
+    </ImageView>
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_Text"
+        android:layout_alignBottom="@+id/main_Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-150dp"
+        android:background="@drawable/text_main">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub_Text"
+        android:layout_alignBottom="@+id/main_Text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-50dp"
+        android:background="@drawable/sub_text" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getStarted_Button"
+        android:background="@drawable/get_started"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/sub_Text"
+        android:layout_marginBottom="-80dp"
+        >
+
+    </ImageView>
+</RelativeLayout>
