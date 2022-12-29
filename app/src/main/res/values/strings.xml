@@ -4,4 +4,7 @@
     <string name="user_name">User Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="select_region">Select Region</string>
+    <string name="todo">TODO</string>
+    <string name="confirm_pass">Confirm Pass</string>
 </resources>
