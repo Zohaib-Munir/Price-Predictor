@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ProfileScreen">
+
+
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/back_arrow" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/myprofile_text"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:id="@+id/second_profile_layout"
+        android:layout_marginTop="30dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profile_image"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            android:layout_marginStart="10dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_info"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/currencies_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_profile_layout"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/digital_currencies"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/upperlayer2"
+        android:layout_below="@id/currencies_Layout">
+
+    <LinearLayout
+        android:id="@+id/wallet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wallet_view"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/refferal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/wallet_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/referral_view"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notification_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/refferal_layout"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notification_view"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/security_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_below="@id/notification_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/security_view"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/customer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/security_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customer_services_view"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_below="@id/customer_layout">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/settings_view"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
